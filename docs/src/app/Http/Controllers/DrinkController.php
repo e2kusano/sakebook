@@ -44,19 +44,7 @@ class DrinkController extends Controller
         $drinks->flavor = $request->flavor;
         $drinks->image_url = $request->image_url;
 
-//        //セレクトボックスの値を文字列に変換
-//        $prefectureName = Config::get('view_select.prefectures');
-//        $prefectureNumber = intval($request->prefecture);
-//        $drinks->prefecture = '';
-//        if (isset($request->prefecture)) {
-//            $drinks->prefecture = $prefectureName[$prefectureNumber];
-//        }
-//
-//        //チェックボックスの値を文字列に変換
-//        $drinks->inquiry_type = '';
-//        if (isset($request->inquiry_type)) {
-//            $drinks->inquiry_type = implode(',', $request->inquiry_type);
-//        }
+
 
           //ラジオボタンの値を文字列に変換
 

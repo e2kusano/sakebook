@@ -22,14 +22,7 @@ class DrinkController extends Controller
         //エラーチェック
         $request->validate([
             'name' => 'required|max:50',
-//            'adv' => 'max:50',
-//            'color' => 'max:50',
-//            'split' => 'required|max:50',
-//            'taste' => 'required|max:100',
-//            'glass_type' => 'required',
-//            'recipe' => 'required|max:1500',
-//            'flavor' => 'required',
-//            'image_url' => 'required'
+            'detail' => 'required|max:1500'
         ]);
 
         //入力値を$drinksに格納
@@ -39,18 +32,12 @@ class DrinkController extends Controller
         $drinks->color = $request->color;
         $drinks->split = $request->split;
         $drinks->taste = $request->taste;
-        $drinks->glass_tyle = $request->glass_tyle;
+        $drinks->glass_type = $request->glass_type;
         $drinks->recipe = $request->recipe;
         $drinks->flavor = $request->flavor;
         $drinks->image_url = $request->image_url;
+        $drinks->detail = $request->detail;
 
-
-
-          //ラジオボタンの値を文字列に変換
-
-
-
-        
         //二重送信防止
         $request->session()->regenerateToken();
 

@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/drink', 'DrinkController@show');
+Route::post('/drink', 'DrinkController@entry');
+

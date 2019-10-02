@@ -15,6 +15,7 @@ class Drink extends Model
         'glass_type',
         'recipe',
         'flavor',
-        'image_url'
+        'image_url',
+        'detail'
     ];
 }

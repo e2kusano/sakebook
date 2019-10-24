@@ -33,7 +33,7 @@
 
 @section('content')
     <p style="font-size: 50px;">編集</p>
-    {!!Form::open(['url'=>'/create/update','method'=>'post','class'=>'needs-validation','novalidate'=>'novalidate'])!!}
+    {!!Form::open(['url'=>'/create/edit','method'=>'post','class'=>'needs-validation','novalidate'=>'novalidate'])!!}
     @php $inputName = 'honey' @endphp
     {{Form::text($inputName,'',['style'=>'display:none'])}}
     @php $inputName = 'id' @endphp
@@ -124,6 +124,6 @@
         @endif
     </div>
     <div class="button">
-        {!! Form::submit('送信する') !!}
+        {!! Form::submit('編集する') !!}
     </div>
 @endsection

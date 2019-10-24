@@ -15,7 +15,7 @@ use App\Models\Flavor;
 
 class CreateController extends Controller
 {
-    public function show()
+    public function index()
     {
         $creates = new Create;
         $creates->abvs = Abv::all();
@@ -64,7 +64,7 @@ class CreateController extends Controller
 
         //二重送信防止
         $request->session()->regenerateToken();
-        dd($creates);
+
         //DB保存
         $creates->save();
 
@@ -136,6 +136,19 @@ class CreateController extends Controller
         $creates->save();
 
         return view('create.update');
+    }
+
+    public function show($id)
+    {
+        $creates = Create::find($id);
+        return view('create.show',compact('creates'));
+
+    }
+
+    public function delete(Request $request)
+    {
+        Create::destroy($request->id);
+         return view('create.delete');
     }
 
     public function finish(Request $request)

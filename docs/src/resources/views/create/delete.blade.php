@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|登録リスト')
+@section('title','sakebook|登録完了')
 
 @section('head')
     <meta charset="utf-8">
@@ -32,14 +32,6 @@
 @endsection
 
 @section('content')
-<div>
-    <p>つくったものリスト</p>
-    @foreach($creates as $create)
-        <a href="/create/edit/{{$create->id}}">{{$create->name}}</a>
-        <a href="/create/delete/{{$create->id}}">削除</a>
-        <br>
-
-        @endforeach
-</div>
-
+    削除完了しました。
+    <a href="/home">TOP</a>
 @endsection

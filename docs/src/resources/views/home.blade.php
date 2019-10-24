@@ -66,7 +66,7 @@
         @if (Route::has('login'))
             <div class="top-right links">
                 @auth
-                    <a href="{{ url('/home') }}">マイページ</a>
+                    {{--<a href="{{ url('/home') }}">マイページ</a>--}}
                 @else
                     <a href="{{ route('login') }}">ログイン</a>
 
@@ -83,7 +83,8 @@
                         <div class="links">
                             <a href="https://github.com/e2kusano/sakebook/tree/master/docs/src">GitHub</a>
                             {{--自作カクテル--}}
-                            <a href="/creation">つくってみる</a>
+                            <a href="/create">つくってみる</a>
+                            <a href="/create/list">つくったものリスト</a>
                             {{--全種類--}}
                             <a href="">全種類検索</a>
                             {{--味--}}

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCreationsTable extends Migration
+class CreateCreatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateCreationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('creations', function (Blueprint $table) {
+        Schema::create('creates', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user')->comment('ユーザー');
             $table->string('name',50)->comment('名前');
             $table->integer('abv')->comment('アルコール度数')->nullable();
             $table->integer('color')->comment('色')->nullable();
@@ -36,6 +37,6 @@ class CreateCreationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('creations');
+        Schema::dropIfExists('creates');
     }
 }

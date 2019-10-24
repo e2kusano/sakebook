@@ -76,8 +76,6 @@
                     SakeBook
                     <div class="links">
                         <a href="https://github.com/e2kusano/sakebook/tree/master/docs/src">GitHub</a>
-                        {{--自作カクテル--}}
-                        <a href="/creation">つくってみる</a>
                         {{--全種類--}}
                         <a href="">全種類検索</a>
                         {{--味--}}

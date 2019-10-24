@@ -18,7 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/creation', 'CreationController@show');
-Route::post('/creation', 'CreationController@entry');
-Route::get('/creation/finish', 'CreationController@finish');
+Route::get('/create', 'CreateController@show');
+Route::post('/create', 'CreateController@entry');
+Route::get('/create/list', 'CreateController@EntryList');
+Route::get('/create/edit/{id}', 'CreateController@edit');
+Route::post('/create/update', 'CreateController@update');
+Route::get('/create/finish', 'CreateController@finish');
+
 

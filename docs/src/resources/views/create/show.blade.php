@@ -80,10 +80,10 @@
             {{$recipe->name}}
         @endforeach
     </div>
-    <div class="flavor">
-        <div>味</div>
-        @foreach($creates->flavors as $flavor)
-            {{$flavor->name}}
+    <div class="style">
+        <div>見た目</div>
+        @foreach($creates->styles as $style)
+            {{$style->name}}
         @endforeach
     </div>
     <div class="image_url">

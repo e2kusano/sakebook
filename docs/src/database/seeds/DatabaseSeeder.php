@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TastesTableSeeder::class);
         $this->call(GlassTypesTableSeeder::class);
         $this->call(RecipesTableSeeder::class);
-        $this->call(FlavorsTableSeeder::class);
+        $this->call(StylesTableSeeder::class);
         $this->call(CreateTableSeeder::class);
 
     }

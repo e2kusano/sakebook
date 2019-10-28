@@ -23,7 +23,7 @@ class CreateCreatesTable extends Migration
             $table->integer('taste')->comment('テイスト')->nullable();
             $table->integer('glass_type')->comment('グラスタイプ')->nullable();
             $table->integer('recipe')->comment('製法')->nullable();
-            $table->integer('flavor')->comment('味')->nullable();
+            $table->integer('style')->comment('見た目')->nullable();
             $table->string('image_url')->comment('画像')->nullable();
             $table->string('detail',1500)->comment('作り方');
             $table->timestamps();

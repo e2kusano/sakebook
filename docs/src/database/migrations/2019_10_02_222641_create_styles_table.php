@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFlavorsTable extends Migration
+class CreateStylesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateFlavorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('flavors', function (Blueprint $table) {
+        Schema::create('styles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->comment('味');
+            $table->string('name')->comment('見た目');
+            $table->string('directory')->comment('ディレクトリ');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateFlavorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flavors');
+        Schema::dropIfExists('styles');
     }
 }

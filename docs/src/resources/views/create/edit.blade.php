@@ -100,12 +100,12 @@
             {!! Form::label($inputName.$recipe->id,$recipe->name.'　　')!!}
         @endforeach
     </div><br>
-    <div class="flavor">
-        @php $inputName = 'flavor' @endphp
-        <div><label for="<?php echo $inputName;?>">味</label></div>
-        @foreach($creates->flavors as $flavor)
-            {{ Form::radio($inputName,$flavor->id,$flavor->id === $creates->flavor ? 'checked':'',['id'=>$inputName.$flavor->id])}}
-            {!! Form::label($inputName.$flavor->id,$flavor->name.'　　')!!}
+    <div class="style">
+        @php $inputName = 'style' @endphp
+        <div><label for="<?php echo $inputName;?>">見た目</label></div>
+        @foreach($creates->styles as $style)
+            {{ Form::radio($inputName,$style->id,$style->id === $creates->style ? 'checked':'',['id'=>$inputName.$style->id])}}
+            {!! Form::label($inputName.$style->id,$style->name.'　　')!!}
         @endforeach
     </div><br>
     <div class="image_utl">

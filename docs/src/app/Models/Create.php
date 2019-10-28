@@ -41,8 +41,8 @@ class Create extends Model
         return $this->hasMany('App\Models\Recipe','id','recipe');
     }
 
-    public function flavors()
+    public function styles()
     {
-        return $this->hasMany('App\Models\Flavor','id','flavor');
+        return $this->hasMany('App\Models\Style','id','style');
     }
 }

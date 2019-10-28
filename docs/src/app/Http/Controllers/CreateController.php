@@ -11,7 +11,7 @@ use App\Models\Split;
 use App\Models\Taste;
 use App\Models\GlassType;
 use App\Models\Recipe;
-use App\Models\Flavor;
+use App\Models\Style;
 
 class CreateController extends Controller
 {
@@ -20,7 +20,7 @@ class CreateController extends Controller
         $creates = new Create;
         $creates->abvs = Abv::all();
         $creates->colors = Color::all();
-        $creates->flavors = Flavor::all();
+        $creates->styles = Style::all();
         $creates->splits = Split::all();
         $creates->glass_types = GlassType::all();
         $creates->recipes = Recipe::all();
@@ -58,7 +58,7 @@ class CreateController extends Controller
         $creates->taste = $request->taste;
         $creates->glass_type = $request->glass_type;
         $creates->recipe = $request->recipe;
-        $creates->flavor = $request->flavor;
+        $creates->style = $request->style;
         $creates->image_url = $request->image_url;
         $creates->detail = $request->detail;
 
@@ -88,7 +88,7 @@ class CreateController extends Controller
         $creates = Create::find($id);
         $creates->abvs = Abv::all();
         $creates->colors = Color::all();
-        $creates->flavors = Flavor::all();
+        $creates->styles = Style::all();
         $creates->splits = Split::all();
         $creates->glass_types = GlassType::all();
         $creates->recipes = Recipe::all();
@@ -125,7 +125,7 @@ class CreateController extends Controller
         $creates->taste = $request->taste;
         $creates->glass_type = $request->glass_type;
         $creates->recipe = $request->recipe;
-        $creates->flavor = $request->flavor;
+        $creates->style = $request->style;
         $creates->image_url = $request->image_url;
         $creates->detail = $request->detail;
 

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|編集完了')
+@section('title','sakebook|見た目')
 
 @section('head')
     <meta charset="utf-8">
@@ -29,10 +29,22 @@
         }
 
     </style>
-
 @endsection
 
 @section('content')
-    編集完了しました。</br>
-    <a href="/create/list">つくったものリスト</a>
+    <div>
+        <a href="/style/cute">かわいい</a>
+    </div>
+    <div>
+        <a href="/style/cool">かっこいい</a>
+    </div>
+    <div>
+        <a href="/style/simple">シンプル</a>
+    </div>
+    <div>
+        <a href="/style/luxury">豪華</a>
+    </div>
+    <div>
+        <a href="/style/eccentric">奇抜</a>
+    </div>
 @endsection

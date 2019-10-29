@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|見た目｜豪華')
+@section('title','sakebook|見た目｜リスト')
 
 @section('head')
     <meta charset="utf-8">
@@ -15,11 +15,16 @@
 
 @section('content')
     <div>
-        豪華リスト
+        見た目リスト
     </div>
-    @foreach($luxuries as $luxury)
-        <a href="/style/{{$luxury->id}}">{{$luxury->name}}</a>
+    @php $path = request()->path() @endphp
+    @foreach($lists as $list)
+        @foreach($list->styles as $style)
+        @if(strpos($path,$style->directory)!== false )
+        <a href="/create/{{$list->id}}">{{$list->name}}</a>
         <br>
+        @endif
+            @endforeach
     @endforeach
     <a href="/style">戻る</a>
 @endsection

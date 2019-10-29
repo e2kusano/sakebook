@@ -28,12 +28,10 @@ Route::post('/create/delete', 'CreateController@delete');
 Route::get('/create/finish', 'CreateController@finish');
 
 Route::get('/style', 'StyleController@index');
-Route::get('/style/cute', 'StyleController@cute');
-Route::get('/style/cool', 'StyleController@cool');
-Route::get('/style/eccentric', 'StyleController@eccentric');
-Route::get('/style/simple', 'StyleController@simple');
-Route::get('/style/luxury', 'StyleController@luxury');
-Route::get('/style/{id}', 'StyleController@detail');
+Route::get('/style/{directory}', 'StyleController@showList');
+Route::get('/create/{id}', 'StyleController@detail');
+
+Route::get('/color', 'ColorController@index');
 
 
 

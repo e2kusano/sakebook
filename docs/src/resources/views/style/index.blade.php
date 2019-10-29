@@ -32,19 +32,10 @@
 @endsection
 
 @section('content')
+    @foreach($styles as $style)
     <div>
-        <a href="/style/cute">かわいい</a>
+        <a href="/style/{{$style->directory}}">{{$style->name}}</a>
     </div>
-    <div>
-        <a href="/style/cool">かっこいい</a>
-    </div>
-    <div>
-        <a href="/style/simple">シンプル</a>
-    </div>
-    <div>
-        <a href="/style/luxury">豪華</a>
-    </div>
-    <div>
-        <a href="/style/eccentric">奇抜</a>
-    </div>
+    @endforeach
+    <a href="/home">トップに戻る</a>
 @endsection

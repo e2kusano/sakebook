@@ -16,6 +16,7 @@ class CreateSplitsTable extends Migration
         Schema::create('splits', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment('割り物');
+            $table->string('directory')->comment('ディレクトリ');
             $table->timestamps();
         });
     }

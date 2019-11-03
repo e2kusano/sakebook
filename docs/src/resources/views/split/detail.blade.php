@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
-@foreach($details->colors as $color)
-@section('title','検索｜色｜'.$color->name.'｜詳細ページ')
+@foreach($details->splits as $split)
+    @section('title','検索｜割り物｜'.$split->name.'｜詳細ページ')
 @endforeach
 
 @section('head')
@@ -72,7 +72,7 @@
         <div>作り方</div>
         {{$details->detail}}
     </div>
-    @foreach($details->colors as $color)
-        <a href="/style/{{$color->directory}}">一覧に戻る</a>
+    @foreach($details->splits as $split)
+        <a href="/split/{{$split->directory}}">一覧に戻る</a>
     @endforeach
 @endsection

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Create;
 use App\Models\Style;
-use Illuminate\Http\Request;
 
 class StyleController extends Controller
 {

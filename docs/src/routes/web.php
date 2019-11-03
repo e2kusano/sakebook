@@ -35,5 +35,9 @@ Route::get('/color', 'ColorController@index');
 Route::get('/color/{directory}', 'ColorController@showList');
 Route::get('/create/{id}', 'ColorController@detail');
 
+Route::get('/split', 'SplitController@index');
+Route::get('/split/{directory}', 'SplitController@showList');
+Route::get('/create/{id}', 'SplitController@detail');
+
 
 

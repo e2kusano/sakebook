@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','検索｜色')
+@section('title','検索｜割り物')
 
 @section('head')
     <meta charset="utf-8">
@@ -15,8 +15,8 @@
 
 @section('content')
     <div>色一覧</div>
-    @foreach($colors as $color)
-        <a href="color/{{$color->directory}}">{{$color->name}}</a>
+    @foreach($splits as $split)
+        <a href="split/{{$split->directory}}">{{$split->name}}</a>
         <br>
     @endforeach
     <a href="/home">トップに戻る</a>

@@ -32,7 +32,8 @@ Route::get('/style/{directory}', 'StyleController@showList');
 Route::get('/create/{id}', 'StyleController@detail');
 
 Route::get('/color', 'ColorController@index');
-
+Route::get('/color/{directory}', 'ColorController@showList');
+Route::get('/create/{id}', 'ColorController@detail');
 
 
 

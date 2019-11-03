@@ -23,9 +23,9 @@ class CreateTableSeeder extends Seeder
             'style' => '1',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -41,9 +41,9 @@ class CreateTableSeeder extends Seeder
             'style' => '2',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -59,9 +59,9 @@ class CreateTableSeeder extends Seeder
             'style' => '3',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -77,9 +77,9 @@ class CreateTableSeeder extends Seeder
             'style' => '4',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -95,9 +95,9 @@ class CreateTableSeeder extends Seeder
             'style' => '5',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -113,9 +113,9 @@ class CreateTableSeeder extends Seeder
             'style' => '1',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -131,9 +131,9 @@ class CreateTableSeeder extends Seeder
             'style' => '2',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -149,9 +149,9 @@ class CreateTableSeeder extends Seeder
             'style' => '3',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -167,9 +167,9 @@ class CreateTableSeeder extends Seeder
             'style' => '4',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方
+                作り方
+                作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
@@ -185,11 +185,69 @@ class CreateTableSeeder extends Seeder
             'style' => '5',
             'image_url' => '/photo.png',
             'detail' =>
-                'ジン30mm
-                トニックウォーターアップ
-                ライム落とし',
+                '作り方作り方作り方',
             'created_at' => '2019-10-01 00:00:00',
             'updated_at' => '2019-10-01 00:00:00'
         ]);
+$colors = [
+    ['透明',1],
+    ['赤',2],
+    ['オレンジ',3],
+    ['黄色',4],
+    ['緑',5],
+    ['青',6],
+    ['ピンク',7],
+    ['紫',8],
+    ['琥珀色',9],
+    ['白',10],
+    ['黒',11],
+    ['茶色',12]
+];
+$count = 1;
+foreach($colors as $color){
+        DB::table('creates')->insert([
+            'user' => '1',
+            'name' => $color[0].'1',
+            'abv' => '1',
+            'color' => $color[1],
+            'split' => '3',
+            'taste' => '1',
+            'glass_type' => '2',
+            'recipe' => '3',
+            'style' => '5',
+            'image_url' => '/photo.png',
+            'detail' =>
+                '作り方
+                作り方
+                作り方',
+            'created_at' => '2019-10-0'.$count.' 00:00:00',
+            'updated_at' => '2019-10-0'.$count.' 00:00:00'
+        ]);
+    $count++;
+}
+        foreach($colors as $color){
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $color[0].'2',
+                'abv' => '1',
+                'color' => $color[1],
+                'split' => '3',
+                'taste' => '1',
+                'glass_type' => '2',
+                'recipe' => '3',
+                'style' => '5',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0'.$count.' 00:00:00',
+                'updated_at' => '2019-10-0'.$count.' 00:00:00'
+            ]);
+            $count++;
+        }
+
+
+
     }
 }

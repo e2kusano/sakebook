@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|見た目')
+@section('title','検索｜見た目')
 
 @section('head')
     <meta charset="utf-8">

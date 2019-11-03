@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|編集完了')
+@section('title','編集完了')
 
 @section('head')
     <meta charset="utf-8">

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|登録リスト')
+@section('title','登録リスト')
 
 @section('head')
     <meta charset="utf-8">

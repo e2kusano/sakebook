@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|SAKE登録')
+@section('title','登録')
 
 
 @section('head')

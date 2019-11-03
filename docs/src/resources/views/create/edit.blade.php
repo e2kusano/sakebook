@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','sakebook|'.$creates->name.'の編集')
+@section('title',$creates->name.'の編集')
 
 @section('head')
     <meta charset="utf-8">

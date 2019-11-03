@@ -1,6 +1,14 @@
 @extends('layouts.default')
 
-@section('title','sakebook|見た目｜リスト')
+@php
+    $path = request()->path();
+    $path = explode('/',$path);
+@endphp
+@foreach($styles as $style)
+    @if($path[1] === $style->directory)
+        @section('title','検索｜見た目｜'.$style->name)
+@endif
+@endforeach
 
 @section('head')
     <meta charset="utf-8">

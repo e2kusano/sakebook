@@ -2,6 +2,10 @@
 
 @section('title','sakebook|見た目｜詳細ページ')
 
+@foreach($details->styles as $style)
+    @section('title','検索｜色｜'.$style->name.'｜詳細ページ')
+@endforeach
+
 @section('head')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

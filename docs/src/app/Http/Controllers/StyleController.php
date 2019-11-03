@@ -18,12 +18,14 @@ class StyleController extends Controller
     public function showList()
     {
         $lists = Create::with('styles')->get();
-        return view('style.list', compact('lists'));
+        $styles = Style::all();
+        return view('style.list', compact('lists','styles'));
     }
 
     public function detail($id)
     {
         $details = Create::find($id);
-        return view('style.detail',compact('details'));
+        $styles = Style::all();
+        return view('style.detail',compact('details','styles'));
     }
 }

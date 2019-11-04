@@ -39,5 +39,9 @@ Route::get('/split', 'SplitController@index');
 Route::get('/split/{directory}', 'SplitController@showList');
 Route::get('/create/{id}', 'SplitController@detail');
 
+Route::get('/abv', 'AbvController@index');
+Route::get('/abv/{directory}', 'AbvController@showList');
+Route::get('/create/{id}', 'AbvController@detail');
+
 
 

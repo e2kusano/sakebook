@@ -12,16 +12,24 @@ class AbvsTableSeeder extends Seeder
     public function run()
     {
         DB::table('abvs')->insert([
-            'name' => '弱い',
+            'name' => '〜３０',
+            'directory' => 'under30'
         ]);
         DB::table('abvs')->insert([
-            'name' => '普通',
+            'name' => '３１〜４０',
+            'directory' => '31-40'
         ]);
         DB::table('abvs')->insert([
-            'name' => '強い',
+            'name' => '４１〜５０',
+            'directory' => '41-50'
         ]);
         DB::table('abvs')->insert([
-            'name' => 'フィーバー',
+            'name' => '５１〜６０',
+            'directory' => '51-60'
+        ]);
+        DB::table('abvs')->insert([
+            'name' => '６０〜',
+            'directory' => 'over60'
         ]);
     }
 }

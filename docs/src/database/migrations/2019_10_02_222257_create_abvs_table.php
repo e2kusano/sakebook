@@ -16,6 +16,7 @@ class CreateAbvsTable extends Migration
         Schema::create('abvs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment('アルコール度数');
+            $table->string('directory')->comment('ディレクトリ');
             $table->timestamps();
         });
     }

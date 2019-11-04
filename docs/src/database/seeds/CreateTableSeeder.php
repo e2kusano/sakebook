@@ -301,6 +301,55 @@ class CreateTableSeeder extends Seeder
             ]);
             $count++;
         }
-
+        $abvs = [
+            ['〜３０', 1],
+            ['３１〜４０', 2],
+            ['４１〜５０', 3],
+            ['５１〜６０', 4],
+            ['６０〜', 5]
+        ];
+        $count = 1;
+        foreach ($abvs as $abv) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $abv[0] . '（１）',
+                'abv' => $abv[1],
+                'color' => '2',
+                'split' => 1,
+                'taste' => '1',
+                'glass_type' => '2',
+                'recipe' => '3',
+                'style' => '3',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
+        foreach ($abvs as $abv) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $abv[0] . '（２）',
+                'abv' => $abv[1],
+                'color' => '2',
+                'split' => '1',
+                'taste' => '1',
+                'glass_type' => '2',
+                'recipe' => '3',
+                'style' => '3',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
     }
 }

@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Create;
 use App\Models\Abv;
-use App\Models\Color;
+use App\Models\Base;
 use App\Models\Split;
-use App\Models\Taste;
-use App\Models\GlassType;
-use App\Models\Recipe;
+use App\Models\Color;
 use App\Models\Style;
 
 class CreateController extends Controller
@@ -19,12 +17,10 @@ class CreateController extends Controller
     {
         $creates = new Create;
         $creates->abvs = Abv::all();
+        $creates->bases = Base::all();
+        $creates->splits = Split::all();
         $creates->colors = Color::all();
         $creates->styles = Style::all();
-        $creates->splits = Split::all();
-        $creates->glass_types = GlassType::all();
-        $creates->recipes = Recipe::all();
-        $creates->tastes = Taste::all();
 
         return view('create.input')
             ->with('creates', $creates);
@@ -53,11 +49,9 @@ class CreateController extends Controller
         $creates->user = $user;
         $creates->name = $request->name;
         $creates->abv = $request->abv;
-        $creates->color = $request->color;
+        $creates->base = $request->base;
         $creates->split = $request->split;
-        $creates->taste = $request->taste;
-        $creates->glass_type = $request->glass_type;
-        $creates->recipe = $request->recipe;
+        $creates->color = $request->color;
         $creates->style = $request->style;
         $creates->image_url = $request->image_url;
         $creates->detail = $request->detail;
@@ -87,12 +81,10 @@ class CreateController extends Controller
     {
         $creates = Create::find($id);
         $creates->abvs = Abv::all();
+        $creates->base = Base::all();
+        $creates->splits = Split::all();
         $creates->colors = Color::all();
         $creates->styles = Style::all();
-        $creates->splits = Split::all();
-        $creates->glass_types = GlassType::all();
-        $creates->recipes = Recipe::all();
-        $creates->tastes = Taste::all();
 
         return view('create.edit', compact('creates'));
     }
@@ -120,11 +112,9 @@ class CreateController extends Controller
         $creates->user = $user;
         $creates->name = $request->name;
         $creates->abv = $request->abv;
-        $creates->color = $request->color;
+        $creates->base = $request->base;
         $creates->split = $request->split;
-        $creates->taste = $request->taste;
-        $creates->glass_type = $request->glass_type;
-        $creates->recipe = $request->recipe;
+        $creates->color = $request->color;
         $creates->style = $request->style;
         $creates->image_url = $request->image_url;
         $creates->detail = $request->detail;

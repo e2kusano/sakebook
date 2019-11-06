@@ -60,12 +60,12 @@
             {!! Form::label($inputName.$abv->id,$abv->name.'　　')!!}
             @endforeach
     </div><br>
-    <div class="color">
-        @php $inputName = 'color' @endphp
-        <div><label for="<?php echo $inputName;?>">色</label></div>
-        @foreach($creates->colors as $color)
-            {{ Form::radio($inputName,$color->id,$color->id === $creates->color ? 'checked':'',['id'=>$inputName.$color->id])}}
-            {!! Form::label($inputName.$color->id,$color->name.'　　')!!}
+    <div class="base">
+        @php $inputName = 'base' @endphp
+        <div><label for="<?php echo $inputName;?>">ベース</label></div>
+        @foreach($creates->bases as $base)
+            {{ Form::radio($inputName,$base->id,$base->id === $creates->base ? 'checked':'',['id'=>$inputName.$base->id])}}
+            {!! Form::label($inputName.$base->id,$base->name.'　　')!!}
         @endforeach
     </div><br>
     <div class="split">
@@ -76,28 +76,12 @@
             {!! Form::label($inputName.$split->id,$split->name.'　　')!!}
         @endforeach
     </div><br>
-    <div class="taste">
-        @php $inputName = 'taste' @endphp
-        <div><label for="<?php echo $inputName;?>">テイスト</label></div>
-        @foreach($creates->tastes as $taste)
-            {{ Form::radio($inputName,$taste->id,$taste->id === $creates->taste ? 'checked':'',['id'=>$inputName.$taste->id])}}
-            {!! Form::label($inputName.$taste->id,$taste->name.'　　')!!}
-        @endforeach
-    </div><br>
-    <div class="glass_type">
-        @php $inputName = 'glass_type' @endphp
-        <div><label for="<?php echo $inputName;?>">グラスタイプ</label></div>
-        @foreach($creates->glass_types as $glass_type)
-            {{ Form::radio($inputName,$glass_type->id,$glass_type->id === $creates->glass_type ? 'checked':'',['id'=>$inputName.$glass_type->id])}}
-            {!! Form::label($inputName.$glass_type->id,$glass_type->name.'　　')!!}
-        @endforeach
-    </div><br>
-    <div class="recipe">
-        @php $inputName = 'recipe' @endphp
-        <div><label for="<?php echo $inputName;?>">製法</label></div>
-        @foreach($creates->recipes as $recipe)
-            {{ Form::radio($inputName,$recipe->id,$recipe->id === $creates->recipe ? 'checked':'',['id'=>$inputName.$recipe->id])}}
-            {!! Form::label($inputName.$recipe->id,$recipe->name.'　　')!!}
+    <div class="color">
+        @php $inputName = 'color' @endphp
+        <div><label for="<?php echo $inputName;?>">色</label></div>
+        @foreach($creates->colors as $color)
+            {{ Form::radio($inputName,$color->id,$color->id === $creates->color ? 'checked':'',['id'=>$inputName.$color->id])}}
+            {!! Form::label($inputName.$color->id,$color->name.'　　')!!}
         @endforeach
     </div><br>
     <div class="style">

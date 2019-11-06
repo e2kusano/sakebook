@@ -57,6 +57,22 @@
             {!! Form::label($inputName.$abv->id,$abv->name.'　　')!!}
         @endforeach
     </div><br>
+    <div class="base">
+        @php $inputName = 'base' @endphp
+        <div><label for="<?php echo $inputName;?>">ベース</label></div>
+        @foreach($creates->bases as $base)
+            {{ Form::radio($inputName,$base->id,in_array($base->id,(array)$inputName),['id'=>$inputName.$base->id])}}
+            {!! Form::label($inputName.$base->id,$base->name.'　　')!!}
+        @endforeach
+    </div><br>
+    <div class="split">
+        @php $inputName = 'split' @endphp
+        <div><label for="<?php echo $inputName;?>">割り物</label></div>
+        @foreach($creates->splits as $split)
+            {{ Form::radio($inputName,$split->id,in_array($split->id,(array)$inputName),['id'=>$inputName.$split->id])}}
+            {!! Form::label($inputName.$split->id,$split->name.'　　')!!}
+        @endforeach
+    </div><br>
     <div class="color">
         @php $inputName = 'color' @endphp
         <div><label for="<?php echo $inputName;?>">色</label></div>
@@ -65,38 +81,6 @@
             {!! Form::label($inputName.$color->id,$color->name.'　　')!!}
         @endforeach
     </div><br>
-    <div class="split">
-        @php $inputName = 'split' @endphp
-        <div><label for="<?php echo $inputName;?>">割り物</label></div>
-            @foreach($creates->splits as $split)
-            {{ Form::radio($inputName,$split->id,in_array($split->id,(array)$inputName),['id'=>$inputName.$split->id])}}
-            {!! Form::label($inputName.$split->id,$split->name.'　　')!!}
-                @endforeach
-    </div><br>
-    <div class="taste">
-        @php $inputName = 'taste' @endphp
-        <div><label for="<?php echo $inputName;?>">テイスト</label></div>
-            @foreach($creates->tastes as $taste)
-                {{ Form::radio($inputName,$taste->id,in_array($taste->id,(array)$inputName),['id'=>$inputName.$taste->id])}}
-                {!! Form::label($inputName.$taste->id,$taste->name.'　　')!!}
-                @endforeach
-    </div><br>
-    <div class="glass_type">
-        @php $inputName = 'glass_type' @endphp
-        <div><label for="<?php echo $inputName;?>">グラスタイプ</label></div>
-            @foreach($creates->glass_types as $glass_type)
-                {{ Form::radio($inputName,$glass_type->id,in_array($glass_type->id,(array)$inputName),['id'=>$inputName.$glass_type->id])}}
-                {!! Form::label($inputName.$glass_type->id,$glass_type->name.'　　')!!}
-                @endforeach
-    </div><br>
-    <div class="recipe">
-        @php $inputName = 'recipe' @endphp
-            <div><label for="<?php echo $inputName;?>">製法</label></div>
-        @foreach($creates->recipes as $recipe)
-                {{ Form::radio($inputName,$recipe->id,in_array($recipe->id,(array)$inputName),['id'=>$inputName.$recipe->id])}}
-                {!! Form::label($inputName.$recipe->id,$recipe->name.'　　')!!}
-            @endforeach
-        </div><br>
     <div class="style">
         @php $inputName = 'style' @endphp
         <div><label for="<?php echo $inputName;?>">見た目</label></div>

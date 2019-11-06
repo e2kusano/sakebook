@@ -29,34 +29,22 @@
             {{$abv->name}}
         @endforeach
     </div>
-    <div class="abv">
-        <div>色</div>
-        @foreach($details->colors as $color)
-            {{$color->name}}
+    <div class="base">
+        <div>ベース</div>
+        @foreach($details->bases as $base)
+            {{$base->name}}
         @endforeach
     </div>
     <div class="split">
-        <div>アルコール度数</div>
+        <div>割り物</div>
         @foreach($details->splits as $split)
             {{$split->name}}
         @endforeach
     </div>
-    <div class="taste">
-        <div>テイスト</div>
-        @foreach($details->tastes as $taste)
-            {{$taste->name}}
-        @endforeach
-    </div>
     <div class="abv">
-        <div>グラスタイプ</div>
-        @foreach($details->glass_types as $glass_type)
-            {{$glass_type->name}}
-        @endforeach
-    </div>
-    <div class="recipe">
-        <div>製法</div>
-        @foreach($details->recipes as $recipe)
-            {{$recipe->name}}
+        <div>色</div>
+        @foreach($details->colors as $color)
+            {{$color->name}}
         @endforeach
     </div>
     <div class="style">
@@ -75,6 +63,6 @@
         {{$details->detail}}
     </div>
     @foreach($details->styles as $style)
-    <a href="/style/{{$style->directory}}">一覧に戻る</a>
+        <a href="/style/{{$style->directory}}">一覧に戻る</a>
     @endforeach
 @endsection

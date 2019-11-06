@@ -43,5 +43,11 @@ Route::get('/abv', 'AbvController@index');
 Route::get('/abv/{directory}', 'AbvController@showList');
 Route::get('/create/{id}', 'AbvController@detail');
 
+Route::get('/base', 'BaseController@index');
+Route::get('/base/{directory}', 'BaseController@showList');
+Route::get('/create/{id}', 'BaseController@detail');
+
+
+
 
 

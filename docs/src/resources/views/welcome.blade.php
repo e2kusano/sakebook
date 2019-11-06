@@ -76,15 +76,11 @@
                     SakeBook
                     <div class="links">
                         <a href="https://github.com/e2kusano/sakebook/tree/master/docs/src">GitHub</a>
-                        {{--全種類--}}
                         <a href="">全種類検索</a>
-                        {{--味--}}
                         <a href="/style">見た目</a>
-                        {{--度数--}}
                         <a href="/abv">アルコール度数</a>
-                        {{--色--}}
                         <a href="/color">色</a>
-                        {{--割り物--}}
+                        <a href="/base">ベース</a>
                         <a href="/split">割り物</a>
                     </div>
                 </div>

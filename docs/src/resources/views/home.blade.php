@@ -82,25 +82,14 @@
                         SakeBook
                         <div class="links">
                             <a href="https://github.com/e2kusano/sakebook/tree/master/docs/src">GitHub</a>
-                            {{--自作カクテル--}}
                             <a href="/create">つくってみる</a>
                             <a href="/create/list">つくったものリスト</a>
-                            {{--全種類--}}
                             <a href="">全種類検索</a>
-                            {{--味--}}
                             <a href="/style">見た目</a>
-                            {{--ベース--}}
-                            <a href="">ベース</a>
-                            {{--度数--}}
+                            <a href="/base">ベース</a>
                             <a href="/abv">アルコール度数</a>
-                            {{--色--}}
                             <a href="/color">色</a>
-                            {{--割り物--}}
                             <a href="/split">割り物</a>
-                            {{--グラスタイプ--}}
-                            <a href="">グラスタイプ</a>
-                            {{--製法--}}
-                            <a href="">製法</a>
                         </div>
                     </div>
                 </div>

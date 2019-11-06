@@ -16,9 +16,9 @@ class Create extends Model
         return $this->hasMany('App\Models\Abv','id','abv');
     }
 
-    public function colors()
+    public function bases()
     {
-        return $this->hasMany('App\Models\Color','id','color');
+        return $this->hasMany('App\Models\Base','id','base');
     }
 
     public function splits()
@@ -26,19 +26,9 @@ class Create extends Model
         return $this->hasMany('App\Models\Split','id','split');
     }
 
-    public function tastes()
+    public function colors()
     {
-        return $this->hasMany('App\Models\Taste','id','taste');
-    }
-
-    public function glass_types()
-    {
-        return $this->hasMany('App\Models\GlassType','id','glass_type');
-    }
-
-    public function recipes()
-    {
-        return $this->hasMany('App\Models\Recipe','id','recipe');
+        return $this->hasMany('App\Models\Color','id','color');
     }
 
     public function styles()

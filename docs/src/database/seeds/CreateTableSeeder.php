@@ -11,184 +11,6 @@ class CreateTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'かわいい１',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '1',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'かっこいい１',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '2',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'シンプル１',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '3',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => '豪華１',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '4',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => '奇抜１',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '5',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'かわいい２',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '1',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'かっこいい２',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '2',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => 'シンプル２',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '3',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => '豪華２',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '4',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方
-                作り方
-                作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
-        DB::table('creates')->insert([
-            'user' => '1',
-            'name' => '奇抜２',
-            'abv' => '1',
-            'color' => '2',
-            'split' => '3',
-            'taste' => '1',
-            'glass_type' => '2',
-            'recipe' => '3',
-            'style' => '5',
-            'image_url' => '/photo.png',
-            'detail' =>
-                '作り方作り方作り方',
-            'created_at' => '2019-10-01 00:00:00',
-            'updated_at' => '2019-10-01 00:00:00'
-        ]);
         $colors = [
             ['透明', 1],
             ['赤', 2],
@@ -209,11 +31,9 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $color[0] . '1',
                 'abv' => '1',
+                'base' => '1',
                 'color' => $color[1],
                 'split' => '3',
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '5',
                 'image_url' => '/photo.png',
                 'detail' =>
@@ -230,11 +50,9 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $color[0] . '2',
                 'abv' => '1',
+                'base' => '1',
                 'color' => $color[1],
                 'split' => '3',
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '5',
                 'image_url' => '/photo.png',
                 'detail' =>
@@ -266,11 +84,9 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $split['name'] . '１',
                 'abv' => '1',
+                'base' => '1',
                 'color' => '2',
                 'split' => $split['id'],
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '3',
                 'image_url' => '/photo.png',
                 'detail' =>
@@ -287,11 +103,9 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $split['name'] . '２',
                 'abv' => '1',
+                'base' => '1',
                 'color' => '2',
                 'split' => $split['id'],
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '3',
                 'image_url' => '/photo.png',
                 'detail' =>
@@ -304,11 +118,10 @@ class CreateTableSeeder extends Seeder
             $count++;
         }
         $abvs = [
-            ['〜３０', 1],
-            ['３１〜４０', 2],
-            ['４１〜５０', 3],
-            ['５１〜６０', 4],
-            ['６０〜', 5]
+            ['弱い', 1],
+            ['まあまあ', 2],
+            ['強い', 3],
+
         ];
         $count = 1;
         foreach ($abvs as $abv) {
@@ -316,11 +129,9 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $abv[0] . '（１）',
                 'abv' => $abv[1],
+                'base' => '1',
                 'color' => '2',
                 'split' => 1,
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '3',
                 'image_url' => '/photo.png',
                 'detail' =>
@@ -337,12 +148,106 @@ class CreateTableSeeder extends Seeder
                 'user' => '1',
                 'name' => $abv[0] . '（２）',
                 'abv' => $abv[1],
+                'base' => '1',
                 'color' => '2',
                 'split' => '1',
-                'taste' => '1',
-                'glass_type' => '2',
-                'recipe' => '3',
                 'style' => '3',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
+        $bases = [
+            ['テキーラ', 1],
+            ['イエガー', 2],
+            ['コカレロ', 3],
+            ['ジン', 4],
+            ['ウォッカ', 5],
+            ['ラム', 6],
+            ['ウィスキー', 7],
+            ['リキュール', 8],
+            ['その他', 9]
+        ];
+        $count = 1;
+        foreach ($bases as $base) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $base[0] . '１',
+                'abv' => '1',
+                'base' => $base[1],
+                'color' => '2',
+                'split' => 1,
+                'style' => '3',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
+        foreach ($bases as $base) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $base[0] . '２',
+                'abv' => '1',
+                'base' => $base[1],
+                'color' => '2',
+                'split' => 1,
+                'style' => '3',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
+        $styles = [
+            ['かわいい', 1],
+            ['かっこいい', 2],
+            ['シンプル', 3],
+            ['豪華', 4],
+            ['奇抜', 5]
+        ];
+        $count = 1;
+        foreach ($styles as $style) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $style[0] . '1',
+                'abv' => '1',
+                'base' => '1',
+                'color' => $style[1],
+                'split' => '3',
+                'style' => '5',
+                'image_url' => '/photo.png',
+                'detail' =>
+                    '作り方
+                作り方
+                作り方',
+                'created_at' => '2019-10-0' . $count . ' 00:00:00',
+                'updated_at' => '2019-10-0' . $count . ' 00:00:00'
+            ]);
+            $count++;
+        }
+        foreach ($styles as $style) {
+            DB::table('creates')->insert([
+                'user' => '1',
+                'name' => $style[0] . '1',
+                'abv' => '1',
+                'base' => '1',
+                'color' => $style[1],
+                'split' => '3',
+                'style' => '5',
                 'image_url' => '/photo.png',
                 'detail' =>
                     '作り方

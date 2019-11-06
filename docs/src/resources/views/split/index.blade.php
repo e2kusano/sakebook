@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','検索｜割り物')
+@section('title','検索｜割りもの')
 
 @section('head')
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-    <div>色一覧</div>
+    <div>割りもの一覧</div>
     @foreach($splits as $split)
         <a href="split/{{$split->directory}}">{{$split->name}}</a>
         <br>

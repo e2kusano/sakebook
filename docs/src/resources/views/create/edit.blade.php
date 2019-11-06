@@ -70,7 +70,7 @@
     </div><br>
     <div class="split">
         @php $inputName = 'split' @endphp
-        <div><label for="<?php echo $inputName;?>">割り物</label></div>
+        <div><label for="<?php echo $inputName;?>">割りもの</label></div>
         @foreach($creates->splits as $split)
             {{ Form::radio($inputName,$split->id,$split->id === $creates->split ? 'checked':'',['id'=>$inputName.$split->id])}}
             {!! Form::label($inputName.$split->id,$split->name.'　　')!!}

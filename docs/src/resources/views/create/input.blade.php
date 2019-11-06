@@ -67,7 +67,7 @@
     </div><br>
     <div class="split">
         @php $inputName = 'split' @endphp
-        <div><label for="<?php echo $inputName;?>">割り物</label></div>
+        <div><label for="<?php echo $inputName;?>">割りもの</label></div>
         @foreach($creates->splits as $split)
             {{ Form::radio($inputName,$split->id,in_array($split->id,(array)$inputName),['id'=>$inputName.$split->id])}}
             {!! Form::label($inputName.$split->id,$split->name.'　　')!!}

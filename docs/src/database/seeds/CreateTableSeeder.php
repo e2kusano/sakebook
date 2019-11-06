@@ -65,7 +65,7 @@ class CreateTableSeeder extends Seeder
             $count++;
         }
         $splits = collect([
-            ['name' => 'unused', 'id' => 1],
+            ['name' => '酒', 'id' => 1],
             ['name' => '炭酸水', 'id' => 2],
             ['name' => 'トニックウォーター', 'id' => 3],
             ['name' => 'ジンジャーエール', 'id' => 4],

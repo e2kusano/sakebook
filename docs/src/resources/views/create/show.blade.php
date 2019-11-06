@@ -57,7 +57,7 @@
         @endforeach
     </div>
     <div class="split">
-        <div>割り物</div>
+        <div>割りもの</div>
         @foreach($creates->splits as $split)
             {{$split->name}}
         @endforeach

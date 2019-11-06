@@ -12,8 +12,8 @@ class SplitsTableSeeder extends Seeder
     public function run()
     {
         DB::table('splits')->insert([
-            'name' => '使わない',
-            'directory' => 'unused'
+            'name' => '酒',
+            'directory' => 'alcohol'
         ]);
         DB::table('splits')->insert([
             'name' => '炭酸水',

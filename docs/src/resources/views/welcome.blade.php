@@ -79,7 +79,7 @@
                         <a href="">全種類検索</a>
                         <a href="/abv">アルコール度数</a>
                         <a href="/base">ベース</a>
-                        <a href="/split">割り物</a>
+                        <a href="/split">割りもの</a>
                         <a href="/color">色</a>
                         <a href="/style">見た目</a>
                     </div>

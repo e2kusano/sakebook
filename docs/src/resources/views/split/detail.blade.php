@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @foreach($details->splits as $split)
-    @section('title','検索｜割り物｜'.$split->name.'｜詳細ページ')
+    @section('title','検索｜割りもの｜'.$split->name.'｜詳細ページ')
 @endforeach
 
 @section('head')
@@ -34,7 +34,7 @@
         @endforeach
     </div>
     <div class="split">
-        <div>割り物</div>
+        <div>割りもの</div>
         @foreach($details->splits as $split)
             {{$split->name}}
         @endforeach

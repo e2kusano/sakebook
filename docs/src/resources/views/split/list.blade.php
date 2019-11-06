@@ -6,7 +6,7 @@
 @endphp
 @foreach($splits as $split)
     @if($path[1] === $split->directory)
-        @section('title','検索｜割り物｜'.$split->name)
+        @section('title','検索｜割りもの｜'.$split->name)
 @endif
 @endforeach
 
@@ -23,7 +23,7 @@
 
 @section('content')
     <div>
-        色一覧
+        割りもの一覧
     </div>
     @php $path = request()->path() @endphp
     @foreach($lists as $list)

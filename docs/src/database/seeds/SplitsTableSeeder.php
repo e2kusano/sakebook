@@ -12,6 +12,10 @@ class SplitsTableSeeder extends Seeder
     public function run()
     {
         DB::table('splits')->insert([
+            'name' => '使わない',
+            'directory' => 'unused'
+        ]);
+        DB::table('splits')->insert([
             'name' => '炭酸水',
             'directory' => 'soda'
         ]);
@@ -50,6 +54,10 @@ class SplitsTableSeeder extends Seeder
         DB::table('splits')->insert([
             'name' => '牛乳',
             'directory' => 'milk'
+        ]);
+        DB::table('splits')->insert([
+            'name' => 'その他',
+            'directory' => 'other'
         ]);
     }
 }

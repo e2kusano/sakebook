@@ -47,6 +47,11 @@ Route::get('/base', 'BaseController@index');
 Route::get('/base/{directory}', 'BaseController@showList');
 Route::get('/create/{id}', 'BaseController@detail');
 
+Route::get('/search', 'SearchController@index');
+Route::post('/search/result', 'SearchController@result');
+
+
+
 
 
 

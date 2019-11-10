@@ -84,7 +84,7 @@
                             <a href="https://github.com/e2kusano/sakebook/tree/master/docs/src">GitHub</a>
                             <a href="/create">つくってみる</a>
                             <a href="/create/list">つくったものリスト</a>
-                            <a href="">全種類検索</a>
+                            <a href="/search">全種類検索</a>
                             <a href="/abv">アルコール度数</a>
                             <a href="/base">ベース</a>
                             <a href="/split">割りもの</a>

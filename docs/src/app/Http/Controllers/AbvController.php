@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Abv;
 use App\Models\Create;
+use App\Services\WordExtractionServices;
 
 class AbvController extends Controller
 {
@@ -15,15 +16,22 @@ class AbvController extends Controller
 
     public function showList()
     {
-        $lists = Create::with('abvs')->get();
+        $word_extraction = new WordExtractionServices();
+        $low = $word_extraction->getWordExtraction('abvs', 'abv', Abv::LOW);
+        $soso = $word_extraction->getWordExtraction('abvs', 'abv', Abv::SOSO);
+        $high = $word_extraction->getWordExtraction('abvs', 'abv', Abv::HIGH);
         $abvs = Abv::all();
-        return view('abv.list', compact('lists','abvs'));
+        return view('abv.list', compact(
+            'low',
+            'soso',
+            'high',
+            'abvs'));
     }
 
     public function detail($id)
     {
         $details = Create::find($id);
         $abvs = Abv::all();
-        return view('abv.detail',compact('details','abvs'));
+        return view('abv.detail', compact('details', 'abvs'));
     }
 }

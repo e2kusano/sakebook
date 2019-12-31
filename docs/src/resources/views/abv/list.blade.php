@@ -16,23 +16,38 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <!-- Styles -->
 
 @endsection
 
 @section('content')
-    <div>
-        アルコール度数一覧
-    </div>
     @php $path = request()->path() @endphp
-    @foreach($lists as $list)
-        @foreach($list->abvs as $abv)
-            @if(strpos($path,$abv->directory)!== false )
-                <a href="/create/{{$list->id}}">{{$list->name}}</a>
-                <br>
-            @endif
+
+    @if($path == 'abv/low')
+        <div>アルコール度数一覧【弱い】</div>
+        @foreach($low as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
         @endforeach
-    @endforeach
+        {{$low->links()}}
+
+    @elseif($path == 'abv/so-so')
+        <div>アルコール度数一覧【まあまあ】</div>
+        @foreach($soso as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$soso->links()}}
+
+    @elseif($path == 'abv/high')
+        <div>アルコール度数一覧【強い】</div>
+        @foreach($high as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$high->links()}}
+        @endif
+
     <a href="/abv">戻る</a>
 @endsection

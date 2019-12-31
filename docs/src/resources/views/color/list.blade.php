@@ -26,107 +26,107 @@
 
     @if($path == 'color/clear')
         <div>色一覧【透明】</div>
-        @foreach($clears as $clear)
-            <a href="/create/{{$clear->id}}">{{$clear->name}}</a>
+        @foreach($clear as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$clears->links()}}
+        {{$clear->links()}}
 
     @elseif($path == 'color/red')
         <div>色一覧【赤】</div>
-        @foreach($reds as $red)
-            <a href="/create/{{$red->id}}">{{$red->name}}</a>
+        @foreach($red as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$reds->links()}}
+        {{$red->links()}}
 
     @elseif($path == 'color/orange')
         <div>色一覧【オレンジ】</div>
-        @foreach($oranges as $orange)
-            <a href="/create/{{$orange->id}}">{{$orange->name}}</a>
+        @foreach($orange as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$oranges->links()}}
+        {{$orange->links()}}
 
     @elseif($path == 'color/yellow')
         <div>色一覧【黄色】</div>
-        @foreach($yellows as $yellow)
-            <a href="/create/{{$yellow->id}}">{{$yellow->name}}</a>
+        @foreach($yellow as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$yellows->links()}}
+        {{$yellow->links()}}
 
     @elseif($path == 'color/green')
         <div>色一覧【緑】</div>
-        @foreach($greens as $green)
-            <a href="/create/{{$green->id}}">{{$green->name}}</a>
+        @foreach($green as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$greens->links()}}
+        {{$green->links()}}
 
     @elseif($path == 'color/blue')
         <div>色一覧【青】</div>
-        @foreach($blues as $blue)
-            <a href="/create/{{$blue->id}}">{{$blue->name}}</a>
+        @foreach($blue as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$blues->links()}}
+        {{$blue->links()}}
 
     @elseif($path == 'color/pink')
         <div>色一覧【ピンク】</div>
-        @foreach($pinks as $pink)
-            <a href="/create/{{$pink->id}}">{{$pink->name}}</a>
+        @foreach($pink as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$pinks->links()}}
+        {{$pink->links()}}
 
     @elseif($path == 'color/purple')
         <div>色一覧【紫】</div>
-        @foreach($purples as $purple)
-            <a href="/create/{{$purple->id}}">{{$purple->name}}</a>
+        @foreach($purple as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$purples->links()}}
+        {{$purple->links()}}
 
     @elseif($path == 'color/gold')
         <div>色一覧【琥珀色】</div>
-        @foreach($golds as $gold)
-            <a href="/create/{{$gold->id}}">{{$gold->name}}</a>
+        @foreach($gold as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$golds->links()}}
+        {{$gold->links()}}
 
     @elseif($path == 'color/white')
         <div>色一覧【白】</div>
-        @foreach($whites as $white)
-            <a href="/create/{{$white->id}}">{{$white->name}}</a>
+        @foreach($white as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$whites->links()}}
+        {{$white->links()}}
 
     @elseif($path == 'color/green')
         <div>色一覧【緑】</div>
-        @foreach($greens as $green)
-            <a href="/create/{{$green->id}}">{{$green->name}}</a>
+        @foreach($green as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$greens->links()}}
+        {{$green->links()}}
 
     @elseif($path == 'color/black')
         <div>色一覧【黒】</div>
-        @foreach($blacks as $black)
-            <a href="/create/{{$black->id}}">{{$black->name}}</a>
+        @foreach($black as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$blacks->links()}}
+        {{$black->links()}}
 
     @elseif($path == 'color/brown')
         <div>色一覧【黒】</div>
-        @foreach($browns as $brown)
-            <a href="/create/{{$brown->id}}">{{$brown->name}}</a>
+        @foreach($brown as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
             <br>
         @endforeach
-        {{$browns->links()}}
+        {{$brown->links()}}
     @endif
 
     <a href="/color">戻る</a>

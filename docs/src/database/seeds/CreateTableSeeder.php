@@ -223,12 +223,12 @@ class CreateTableSeeder extends Seeder
         foreach ($styles as $style) {
             DB::table('creates')->insert([
                 'user' => '1',
-                'name' => $style[0] . '1',
+                'name' => $style[0] . '１',
                 'abv' => '1',
                 'base' => '1',
-                'color' => $style[1],
+                'color' => '2',
                 'split' => '3',
-                'style' => '5',
+                'style' => $style[1],
                 'image_url' => '/photo.png',
                 'detail' =>
                     '作り方
@@ -242,12 +242,12 @@ class CreateTableSeeder extends Seeder
         foreach ($styles as $style) {
             DB::table('creates')->insert([
                 'user' => '1',
-                'name' => $style[0] . '1',
+                'name' => $style[0] . '２',
                 'abv' => '1',
                 'base' => '1',
-                'color' => $style[1],
+                'color' => '2',
                 'split' => '3',
-                'style' => '5',
+                'style' => $style[1],
                 'image_url' => '/photo.png',
                 'detail' =>
                     '作り方

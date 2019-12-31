@@ -16,23 +16,54 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <!-- Styles -->
 
 @endsection
 
 @section('content')
-    <div>
-        見た目リスト
-    </div>
     @php $path = request()->path() @endphp
-    @foreach($lists as $list)
-        @foreach($list->styles as $style)
-        @if(strpos($path,$style->directory)!== false )
-        <a href="/create/{{$list->id}}">{{$list->name}}</a>
-        <br>
+
+    @if($path == 'style/cute')
+        <div>見た目一覧【かわいい】</div>
+        @foreach($cute as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$cute->links()}}
+
+    @elseif($path == 'style/cool')
+        <div>見た目一覧【かっこいい】</div>
+        @foreach($cool as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$cool->links()}}
+
+    @elseif($path == 'style/simple')
+        <div>見た目一覧【シンプル】</div>
+        @foreach($simple as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$simple->links()}}
+
+    @elseif($path == 'style/luxury')
+        <div>見た目一覧【豪華】</div>
+        @foreach($luxury as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$luxury->links()}}
+
+    @elseif($path == 'style/eccentric')
+        <div>見た目一覧【奇抜】</div>
+        @foreach($eccentric as $value)
+            <a href="/create/{{$value->id}}">{{$value->name}}</a>
+            <br>
+        @endforeach
+        {{$eccentric->links()}}
+
         @endif
-            @endforeach
-    @endforeach
     <a href="/style">戻る</a>
 @endsection

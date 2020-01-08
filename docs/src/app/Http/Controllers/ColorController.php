@@ -47,11 +47,4 @@ class ColorController extends Controller
                 'brown',
                 'colors'));
     }
-
-    public function detail($id)
-    {
-        $details = Create::find($id);
-        $colors = Color::all();
-        return view('color.detail', compact('details', 'colors'));
-    }
 }

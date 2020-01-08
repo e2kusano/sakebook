@@ -131,14 +131,14 @@ class CreateController extends Controller
     public function show($id)
     {
         $creates = Create::find($id);
-        return view('create.show',compact('creates'));
+        return view('create.show', compact('creates'));
 
     }
 
     public function delete(Request $request)
     {
         Create::destroy($request->id);
-         return view('create.delete');
+        return view('create.delete');
     }
 
     public function finish(Request $request)
@@ -146,4 +146,15 @@ class CreateController extends Controller
         return view('create.finish');
     }
 
+    public function detail($id)
+    {
+        $detail = Create::find($id);
+
+        $count_like_users = $detail->like_users()->count();
+
+        return view('create.detail', compact(
+            'detail',
+            'count_like_users'
+        ));
+    }
 }

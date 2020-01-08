@@ -27,11 +27,4 @@ class AbvController extends Controller
             'high',
             'abvs'));
     }
-
-    public function detail($id)
-    {
-        $details = Create::find($id);
-        $abvs = Abv::all();
-        return view('abv.detail', compact('details', 'abvs'));
-    }
 }

@@ -38,11 +38,4 @@ class BaseController extends Controller
             'other',
             'bases'));
     }
-
-    public function detail($id)
-    {
-        $details = Create::find($id);
-        $bases = Base::all();
-        return view('base.detail',compact('details','bases'));
-    }
 }

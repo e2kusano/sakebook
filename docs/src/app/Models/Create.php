@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Create extends Model
 {
@@ -34,5 +35,10 @@ class Create extends Model
     public function styles()
     {
         return $this->hasMany('App\Models\Style','id','style');
+    }
+
+    public function like_users()
+    {
+        return $this->belongsToMany(User::class,'likes','create_id','user_id')->withTimestamps();
     }
 }

@@ -33,11 +33,4 @@ class StyleController extends Controller
             'eccentric',
             'styles'));
     }
-
-    public function detail($id)
-    {
-        $details = Create::find($id);
-        $styles = Style::all();
-        return view('style.detail',compact('details','styles'));
-    }
 }

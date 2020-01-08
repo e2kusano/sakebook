@@ -45,11 +45,4 @@ class splitController extends Controller
             'other',
             'splits'));
     }
-
-    public function detail($id)
-    {
-        $details = Create::find($id);
-        $splits = Split::all();
-        return view('split.detail',compact('details','splits'));
-    }
 }
